@@ -2,20 +2,20 @@
   <div>
     <main-header navsel="front"></main-header>
     <div class="header">
-      <h3><i class="fas fa-th-list"></i> Book list</h3>
+      <h3><i class="fas fa-th-list"></i>คลังรถ</h3>
     </div>
     <div class="container-fluid">
       <div class="categories">
         <div style="width: 100%">
           <form class="form-inline form-search">
-            <p class="font2">Total: {{ results.length }} books</p>
+            <p class="font2">ว่างอยู่: {{ results.length }} คัน</p>
             &nbsp;&nbsp;
             <div class="input-group mb-3" style="width: 20%">
               <input
                 type="text"
                 v-model="search"
                 class="form-control font3"
-                placeholder="Search for Books ,Category ,Status"
+                placeholder="ค้นหารถที่ชอบ"
                 aria-label="Recipient's username"
                 aria-describedby="basic-addon2"
               />
@@ -32,12 +32,12 @@
             <table class="table table-bordered" style="width: 100%">
               <thead class="table-bordered thead-dark">
                 <tr style="text-align: center">
-                  <th scope="col">Book Id</th>
-                  <th scope="col">Picture</th>
-                  <th scope="col">Book Name</th>
-                  <th scope="col">Category</th>
-                  <th scope="col">Status</th>
-                  <th scope="col">Description</th>
+                  <th scope="col">รหัสรถ</th>
+                  <th scope="col">รูป</th>
+                  <th scope="col">ชื่อรถ</th>
+                 
+                  <th scope="col">สถานะ</th>
+                  <th scope="col">คำอธิบาย</th>
                 </tr>
               </thead>
               <tbody>
@@ -47,17 +47,17 @@
                   class="blog-list"
                   style="text-align: center"
                 >
-                  <th scope="row" width="6%">{{ blog.id }}</th>
-                  <td width="15%">
+                  <th scope="row" width="5%">{{ blog.id }}</th>
+                  <td width="10%">
                     <img
                       :src="BASE_URL + blog.thumbnail"
                       alt="thumbnail"
-                      width="100%"
+                      width="50%"
                     />
                   </td>
-                  <td>{{ blog.title }}</td>
-                  <td width="15%">{{ blog.category }}</td>
-                  <td width="15%">
+                  <td width="10%">{{ blog.title }}</td>
+                  
+                  <td width="5%">
                     <div
                       v-if="blog.status == 'Yes'"
                       class="badge badge-success text-wrap"
@@ -81,7 +81,7 @@
                       >
                     </div>
                   </td>
-                  <td width="20%">
+                   <td width="20%">
                     <button
                       type="button"
                       class="btn btn-sm"
@@ -89,7 +89,7 @@
                       v-on:click="navigateTo('/front/read/' + blog.id)"
                     >
                       <span style="color: #ffffff"
-                        ><i class="fas fa-info-circle"></i> Description</span
+                        ><i class="fas fa-info-circle"></i> คำอธิบาย</span
                       >
                     </button>
                     <button
@@ -98,7 +98,7 @@
                       class="btn btn-success btn-sm"
                       v-on:click="navigateTo('/blog/edit/' + blog.id)"
                     >
-                      <i class="far fa-edit"></i>Edit
+                      <i class="far fa-edit"></i>แก้ไข
                     </button>
                     <button
                       v-if="user.type == 'admin'"
@@ -106,7 +106,7 @@
                       class="btn btn-danger btn-sm"
                       v-on:click="deleteBlog(blog)"
                     >
-                      <i class="fas fa-trash-alt"></i> Delete
+                      <i class="fas fa-trash-alt"></i> ลบ
                     </button>
                   </td>
                 </tr>
@@ -175,7 +175,7 @@ export default {
         });
         this.loading = false;
         this.search = value;
-        // console.log(this.category)
+      
       },
     },
   },

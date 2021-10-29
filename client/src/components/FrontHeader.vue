@@ -10,7 +10,7 @@
           alt=""
           loading="lazy"
         />
-        <span class="font1">&nbsp;Library Borrow Booking System</span>
+        <span class="font1">&nbsp;Borrow Bigbike System</span>
       </router-link>
       <button
         class="navbar-toggler"
@@ -36,7 +36,7 @@
           <li class="nav-item active" v-if="isUserLoggedIn">
             <router-link class="nav-link" active-class="active" to="/treasury"
               ><span class="font2" style="color: #fff"
-                ><i class="fas fa-boxes"></i> Library Store</span
+                ><i class="fas fa-boxes"></i> คลังรถ</span
               ></router-link
             >
           </li>
@@ -46,7 +46,7 @@
               active-class="active"
               to="/borrow/create"
               ><span class="font2" style="color: #fff"
-                ><i class="fas fa-clipboard-list"></i> Make a loan</span
+                ><i class="fas fa-clipboard-list"></i> ทำการจอง</span
               ></router-link
             >
           </li>
@@ -56,7 +56,7 @@
               active-class="active"
               to="/borrow/status"
               ><span class="font2" style="color: #fff"
-                ><i class="fas fa-list-ul"></i> Borrow & Return Status</span
+                ><i class="fas fa-list-ul"></i> ตรวจสอบสถานะการจองรถ</span
               ></router-link
             >
           </li>
@@ -435,7 +435,7 @@ export default {
   margin-right: 5px;
 }
 .bg-light {
-  background-color: #ffbcfb !important;
+  background-color: #00ffaa !important;
   color: #fff !important;
 }
 .modal {

@@ -151,8 +151,7 @@ export default {
     CommentComp,
   },
   async created() {
-    // get blog
-    // check permission first
+   
     try {
       let blogId = this.$route.params.blogId;
       this.blog = (await BlogsService.show(blogId)).data;

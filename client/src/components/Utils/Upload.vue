@@ -14,7 +14,7 @@ $event.target.files); fileCount = $event.target.files.length"
           accept="image/*"
           class="input-file"
         />
-        <!-- <p v-if="isInitial || isSuccess"> -->
+ 
         <p v-if="isInitial">
           Drag your file(s) here to begin
           <br />or click to browse

@@ -8,4 +8,4 @@ module.exports = (sequelize, DataTypes) => {
         status: DataTypes.STRING,
     })
     return Borrow
-}
+}//eng

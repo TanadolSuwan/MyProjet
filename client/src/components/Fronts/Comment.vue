@@ -53,7 +53,7 @@ export default {
       }
     },
     async sendComment() {
-      // console.log(`comment: ${this.comment}`)
+      
       try {
         let comment = {
           blogId: this.blogid,

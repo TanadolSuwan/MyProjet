@@ -6,7 +6,7 @@ const CommentController = require('./controllers/CommentController')
 const BorrowController = require('./controllers/BorrowController')
 
 let multer = require("multer")
-// upload section
+
 let storage = multer.diskStorage({
     destination: function (req, file, callback) {
         callback(null, "./public/uploads");

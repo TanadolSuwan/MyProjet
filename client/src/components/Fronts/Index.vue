@@ -7,49 +7,28 @@
         class="logo"
         style="float: left; width: 20%"
       />
-      <h1>Library Borrow Booking</h1>
-      <h2>Computer Science  Information Technology</h2>
-      <h3>Faculty of Science Naresuan University</h3>
-      <p>
-        <i class="fas fa-user-circle"></i> Kunapong Aiamtip &nbsp;&nbsp;<i
-          class="fas fa-envelope"
-        ></i>
-        <a href="mailto:kannaphongi62@nu.ac.th" style="color: #000000"
-          >kannaphongi62@nu.ac.th</a
-        ><br />
-        <i class="fas fa-user-circle"></i> Watcharaphon Bunjan &nbsp;&nbsp;<i
-          class="fas fa-envelope"
-        ></i>
-        <a href="mailto:watcharaphonb62@nu.ac.th" style="color: #000000"
-          >watcharaphonb62@nu.ac.th</a
-        >
-      </p>
+      <h1>Borrow Bigbike</h1>
+      <h3>เว็ปไซต์นี้จัดทำขึ้นมาเพื่อการยืมรถจักรยานยนต์</h3>
+      <h3>ตรงปก ปลอดภัย ไว้ใจได้100% !!</h3>
+     
     </div>
     <br />
     <div class="container-fluid">
       <div class="container">
         <div class="blog-wrapper">
-          <h4><i class="far fa-lightbulb"></i> Instructions</h4>
+         
           <hr />
           <center>
             <img
-              src="../../assets/book.png"
-              width="20%"
+              src="../../assets/d1.jpg"
+              width="100%"
               class="d-inline-block align-top"
               alt=""
               loading="lazy"
             />
           </center>
           <br /><br />          
-           <ui>
-            <li>Users must register and log in to use the book borrowing system.</li>
-            <li>Users can view the inventory list to see if books are available for loan.</li>
-            <li>The user selects "Make a loan transaction" and fills in the details of borrowing the book.</li>
-            <li>In the menu "Borrow & Return Status" will show the details that the user has made a book borrowing transaction.</li>
-            <li>Users can modify or cancel borrowing of the device.</li>
-            <li>The user waits to check the status of borrowing the device from the staff.</li>
-            <li>When the officer approves or disapproves The borrowing status will be displayed at the menu Borrow & Return Status.</li>
-            </ui>            
+                    
         </div>
         <div class="footer"></div>
       </div>
@@ -170,7 +149,7 @@ export default {
   margin-left: auto;
   margin-right: auto;
   border-radius: 5px;
-  background: #99ccff;
+  background: #8100fa;
   height: 250px;
   color: #000000;
   padding: 20px;
@@ -188,7 +167,7 @@ export default {
   background: darksalmon;
   color: white;
 }
-/* thumbnail */
+
 .thumbnail-pic img {
   width: 200px;
   padding: 5px 5px 5px 5px;

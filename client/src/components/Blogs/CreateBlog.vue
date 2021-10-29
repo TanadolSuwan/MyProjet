@@ -103,10 +103,10 @@
                     ></span>
                   </div>
                   <select v-model="blog.category" required>
-                    <option disabled value="">Please select a category</option>
-                    <option value="Programing">Programing</option>
-                    <option value="Math">Math</option>
-                    <option value="Novel">Novel</option>
+                    <option disabled value="">เลือกรถ</option>
+                    <option value="Programing">3คน</option>
+                    <option value="Math">1คน</option>
+                    <option value="Novel">2คน</option>
                   </select>
                 </div>
               </div>
@@ -264,7 +264,7 @@ export default {
       }
     },
     filesChange(fieldName, fileList) {
-      // handle file changes
+      
       const formData = new FormData();
       if (!fileList.length) return;
       // append the files to FormData

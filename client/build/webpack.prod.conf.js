@@ -41,7 +41,7 @@ const webpackConfig = merge(baseWebpackConfig, {
       sourceMap: config.build.productionSourceMap,
       parallel: true
     }),
-    // extract css into its own file
+    
     new ExtractTextPlugin({
       filename: utils.assetsPath('css/[name].[contenthash].css'),
       // Setting the following option to `false` will not extract CSS from codesplit chunks.

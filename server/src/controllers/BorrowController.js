@@ -5,7 +5,7 @@ module.exports = {
         try {
             let borrows = null
             const search = req.query.search
-            // console.log('search key: ' + search)
+          
             if (search) {
                 borrows = await Borrow.findAll({
                     where: {

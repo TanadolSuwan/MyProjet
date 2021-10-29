@@ -38,4 +38,4 @@ module.exports = (sequelize, DataTypes) => {
     User.associate = function (models) { }
 
     return User
-}
+}//eng

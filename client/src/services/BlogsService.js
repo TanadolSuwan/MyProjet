@@ -20,3 +20,4 @@ export default {
         return Api().delete('blog/' + blog.id, blog)
     },
 }
+//eng

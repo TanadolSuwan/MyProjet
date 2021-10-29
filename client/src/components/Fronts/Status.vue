@@ -2,26 +2,26 @@
   <div>
     <main-header navsel="front"></main-header>
     <div class="header">
-      <h3><i class="fas fa-tasks"></i> Status</h3>
+      <h3><i class="fas fa-tasks"></i> ตรวจสถานะการจองรถ</h3>
     </div>
     <div class="container-fluid">
       <div class="categories">
         <div>
-          <p class="font2">Total: {{ borrows.length }} list</p>
+          <p class="font2">รวมทั้งหมด: {{ borrows.length }} คัน</p>
         </div>
         <div class="blog-wrapper table-responsive">
           <span class="font2">
             <table class="table table-bordered" style="width: 100%">
               <thead class="table-bordered table-dark">
                 <tr style="text-align: center">
-                  <th scope="col">Brrow Id</th> 
-                  <th scope="col">Book</th>
-                  <th scope="col">Quantity</th>
-                  <th scope="col">Brrow Date</th>
-                  <th scope="col">Return Date</th>
-                  <th scope="col">Status</th>
-                  <th scope="col">Transaction date</th>
-                  <th scope="col">Description</th>
+                  <th scope="col">รหัสรถ</th> 
+                  <th scope="col">ชื่อรถ</th>
+                  <th scope="col">จำนวน</th>
+                  <th scope="col">วันที่ยืม</th>
+                  <th scope="col">วันที่คืน</th>
+                  <th scope="col">สถานะ</th>
+                  <th scope="col">วันที่ทำรายการ</th>
+                  <th scope="col">แก้ไข/ลบ</th>
                 </tr>
               </thead>
               <tbody>
@@ -124,22 +124,7 @@
                       class="btn-group btn-group-toggle"
                       data-toggle="buttons"
                     >
-                      <label
-                        class="btn"
-                        style="background-color: #ff8800; border-color: #ff8800"
-                      >
-                        <input
-                          type="radio"
-                          name="options"
-                          id="option1"
-                          v-on:click="
-                            navigateTo('/borrow/status/detail/' + borrow.id)
-                          "
-                        />
-                        <span style="color: #ffffff"
-                          ><i class="fas fa-info-circle"></i> Description</span
-                        >
-                      </label>
+                      
                       <label class="btn btn-success">
                         <input
                           type="radio"
@@ -147,7 +132,7 @@
                           id="option2"
                           v-on:click="navigateTo('/borrow/edit/' + borrow.id)"
                         /><i class="far fa-edit"></i>
-                        Edit
+                        แก้ไข
                       </label>
                       <label class="btn btn-danger">
                         <input
@@ -156,7 +141,7 @@
                           id="option3"
                           v-on:click="deleteBorrow(borrow)"
                         /><i class="fas fa-trash-alt"></i>
-                        Delete
+                        ลบ
                       </label>
                     </div>
                   </td>
@@ -194,7 +179,7 @@ export default {
     },
     async deleteBorrow(borrow) {
       try {
-        let result = confirm("Do you want to cancel your book borrowing?");
+        let result = confirm("คุณต้องการลบคำขอยืมรถหรือไม่?");
         if (result) {
           await BorrowsService.delete(borrow);
           this.refreshData();
@@ -238,3 +223,4 @@ export default {
   border-color: palevioletred;
 }
 </style>
+<!-- eng -->

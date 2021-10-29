@@ -24,7 +24,7 @@ Vue.use(SortedTablePlugin)
 
 sync(store, router)
 
-/* eslint-disable no-new */
+
 new Vue({
   el: '#app',
   router,

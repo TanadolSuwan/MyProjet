@@ -11,7 +11,7 @@ module.exports = {
             })
         }
     },
-    // create comment
+ 
     async create(req, res) {
         // res.send(JSON.stringify(req.body))
         try {

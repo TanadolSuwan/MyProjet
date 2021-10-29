@@ -5,7 +5,7 @@ module.exports = {
         try {
             let blogs = null
             const search = req.query.search
-            // console.log('search key: ' + search)
+            
             if (search) {
                 blogs = await Blog.findAll({
                     where: {

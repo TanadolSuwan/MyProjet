@@ -2,19 +2,19 @@
   <div>
     <main-header navsel="front"></main-header>
     <div class="header">
-      <h3><i class="fas fa-edit"></i> Edit</h3>
+      <h3><i class="fas fa-edit"></i> แก้ไข</h3>
     </div>
     <div class="container-fluid">
       <div class="container">
         <div class="blog-wrapper">
-          <h4><i class="far fa-clipboard"></i> Description</h4>
+          <h4><i class="far fa-clipboard"></i> ทำการแก้ไข</h4>
           <hr />
           <br />
           <span class="font2">
             <form v-on:submit.prevent="editBorrow">
               <div class="row">
                 <div class="col">
-                  <label for="input1">Borrower</label>
+                  <label for="input1">ชื่อ</label>
                   <div class="input-group mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="basic-addon1"
@@ -32,7 +32,7 @@
                   </div>
                 </div>
                 <div class="col">
-                  <label for="input1">transaction date</label>
+                  <label for="input1">วันที่แก้ไข</label>
                   <div class="input-group mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="basic-addon1"
@@ -51,7 +51,7 @@
               </div>
               <div class="row">
                 <div class="col">
-                  <label for="input1">Borrowed date</label>
+                  <label for="input1">เปลี่ยนวันยืม</label>
                   <div class="input-group mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="basic-addon1"
@@ -68,7 +68,7 @@
                   </div>
                 </div>
                 <div class="col">
-                  <label for="input1">Set back</label>
+                  <label for="input1">เปลี่ยนวันคืน</label>
                   <div class="input-group mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="basic-addon1"
@@ -87,7 +87,7 @@
               </div>
               <div class="row">
                 <div class="col">
-                  <label for="input1">Book</label>
+                  <label for="input1">เลือกรถ</label>
                   <div class="input-group mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="basic-addon1"
@@ -95,7 +95,7 @@
                       ></span>
                     </div>
                     <select v-model="borrow.equipment" required>
-                      <option disabled value="">{{ borrow.equipment }}</option>
+                      <option disabled value="">เลือกรถ</option>
                       <option v-for="blog in blogs" v-bind:key="blog.id">
                         {{ blog.title }}
                       </option>
@@ -103,7 +103,7 @@
                   </div>
                 </div>
                 <div class="col">
-                  <label for="input1">Quantity</label>
+                  <label for="input1">จำนวน/คัน</label>
                   <div class="input-group mb-3">
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="basic-addon1"
@@ -120,20 +120,7 @@
                   </div>
                 </div>
               </div>
-              <div
-                class="shadow-sm p-3 mb-5 bg-light rounded"
-                style="padding: 0.5rem !important"
-              >
-                <div class="blog-tab"><h5>Revision Summary</h5></div>
-                <p class="font3" style="margin-top: 10px">
-                  <span class="font2">Book: </span>{{ borrow.equipment
-                  }}<br />
-                  <span class="font2">Quantity: </span>{{ borrow.number }}<br />
-                  <span class="font2">Borrowed date: </span>{{ borrow.dateLend
-                  }}<br />
-                  <span class="font2">Set back: </span>{{ borrow.dateReturn }}
-                </p>
-              </div>
+              
               <div class="row">
                 <div class="col">
                   <button
@@ -141,7 +128,7 @@
                     class="btn btn-success"
                     style="width: 100%"
                   >
-                    <i class="fas fa-clipboard-check"></i> Confirm
+                    <i class="fas fa-clipboard-check"></i> ยืนยัน
                   </button>
                 </div>
                 <div class="col">
@@ -151,7 +138,7 @@
                     style="width: 100%"
                     v-on:click="navigateTo('/borrow/status')"
                   >
-                    <i class="fas fa-times-circle"></i> Cancel
+                    <i class="fas fa-times-circle"></i> ยกเลิก
                   </button>
                 </div>
               </div>
@@ -246,3 +233,4 @@ export default {
   margin-top: 50px;
 }
 </style>
+<!-- eng -->

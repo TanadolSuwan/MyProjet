@@ -7,3 +7,4 @@ export default {
         return Api().post('/upload/delete', picture)
     }
 }
+//eng

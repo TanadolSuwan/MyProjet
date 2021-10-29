@@ -10,10 +10,10 @@ import UserShow from '@/components/Users/ShowUser'
 // Authen
 import Login from '@/components/Login'
 
-// Comments
+
 import CommentIndex from '@/components/Comments/Index'
 
-// Blogs
+
 import BlogIndex from '@/components/Blogs/Index'
 import BlogCreate from '@/components/Blogs/CreateBlog'
 import BlogEdit from '@/components/Blogs/EditBlog'

@@ -476,7 +476,7 @@ export default {
   cursor: pointer;
 }
 .dropbox:hover {
-  background: khaki; /* when mouse over to the drop zone, change color */
+  background: khaki; 
   border-radius: 20px;
 }
 .dropbox p {
