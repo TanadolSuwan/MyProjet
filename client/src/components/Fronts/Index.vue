@@ -65,7 +65,7 @@ export default {
         this.appendResults();
         this.results.forEach((blog) => {
           if (this.category.length > 0) {
-            // console.log(this.category.indexOf(blog.category))
+    
             if (this.category.indexOf(blog.category) === -1) {
               this.category.push(blog.category);
             }
